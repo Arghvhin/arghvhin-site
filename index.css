@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url(homepage/KnightGif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: gifAnimation 10s infinite;
+}
+
+@keyframes gifAnimation {
+  0% {
+    background-size: cover;
+  }
+
+  50% {
+    background-size: cover;
+  }
+
+  100% {
+    background-size: cover;
+  }
+}
+
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Adjust as needed */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+.box {
+  max-width: 40ch;
+  color: #fff;
+  padding: 2ch;
+  position: relative;
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  background-image: url(homepage/ConvoBox.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 1ch;
+}
+
+
+
+

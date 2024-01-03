@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html,
+body {
+  height: -webkit-fill-available;
+}
+
+html {
+  background-image: url(aboutMe/AboutMe-bg.jpg);
+  background-repeat: inherit;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes gifAnimation {
+  0% {
+    background-size: cover;
+  }
+
+  50% {
+    background-size: cover;
+  }
+
+  100% {
+    background-size: cover;
+  }
+}
+
+.body-container {
+  border-width: 10px;
+  border-style: solid;
+  border-color: darkgray;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.76);
+  height: fit-content;
+  width: fit-content;
+  margin-top: 100px;
+  overflow: auto;
+  display: flex;
+  contain: content;
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
+}
+
+.Arghvhin {
+  min-width: auto;
+  max-width: 144px;
+  min-height: auto;
+  max-height: 412px;
+}
+
+.Name,
+.Class,
+.Specialty,
+.Inventory,
+.viewVertical,
+h2,
+p {
+  font-family: 'VT323', monospace;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.Me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Specialty {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  border: 5px solid darkgray;
+  margin: 0px 20px 0px 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Style for the table */
+.table {
+  border-collapse: collapse;
+}
+
+.table td {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  display: inline-grid;
+}
+
+/* Style for the popup windows */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 9999;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Style for the back button */
+.back-button {
+  margin: auto;
+  cursor: pointer;
+  background-color: cadetblue;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-img1,
+.btn-img2,
+.btn-img3,
+.btn-img4,
+.btn-img5,
+.btn-img6,
+.btn-img7,
+.btn-img8,
+.btn-img9,
+.btn-imgNone {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.btn-img1 {
+  background-image: url(aboutMe/btn_1.png);
+}
+
+.btn-img2 {
+  background-image: url(aboutMe/btn_2.png);
+}
+
+.btn-img3 {
+  background-image: url(aboutMe/btn_3.png);
+}
+
+.btn-img4 {
+  background-image: url(aboutMe/btn_4.png);
+}
+
+.btn-img5 {
+  background-image: url(aboutMe/btn_5.png);
+}
+
+.btn-img6 {
+  background-image: url(aboutMe/btn_6.png);
+}
+
+.btn-img7 {
+  background-image: url(aboutMe/btn_7.png);
+}
+
+.btn-img8 {
+  background-image: url(aboutMe/btn_8.png);
+}
+
+.btn-img9 {
+  background-image: url(aboutMe/btn_9.png);
+}
+
+.btn-imgNone {
+  background-image: url(aboutMe/btn_empty.png);
+}
+
+.tooltip1,
+.tooltip2,
+.tooltip3,
+.tooltip4,
+.tooltip5,
+.tooltip6,
+.tooltip7,
+.tooltip8,
+.tooltip9 {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 5;
+}
+
+td:hover .tooltip1,
+td:hover .tooltip2,
+td:hover .tooltip3,
+td:hover .tooltip4,
+td:hover .tooltip5,
+td:hover .tooltip6,
+td:hover .tooltip7,
+td:hover .tooltip8,
+td:hover .tooltip9 {
+  visibility: visible;
+}
+
+.gradPic {
+  width: auto;
+  height: 200px;
+}
+
+.gameDev {
+  width: 500px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.ustImg {
+  width: 500px;
+  height: auto;
+  margin-bottom: 5px;
+  border: solid black;
+}
+
+.lotr {
+  width: auto;
+  height: 300px;
+}
+
+.popupcontents {
+  display: flex;
+  align-items: center;
+}
+
+.popup h2 {
+  width: fit-content;
+  margin: auto;
+}
+
+.popup p {
+  padding: 5px;
+}
+
+.viewVertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

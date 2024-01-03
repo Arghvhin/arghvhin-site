@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+
+<head>
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="Header.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div class="item">
+                            <img src="header/shape1.png" alt="Home Icon">
+                            <span>Home</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="AboutMe.html">
+                        <div class="item">
+                            <img src="header/shape2.png" alt="About Icon">
+                            <span>About Me</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="Portfolio.html">
+                        <div class="item">
+                            <img src="header/shape3.png" alt="Portfolio Icon">
+                            <span>Portfolio</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="Contacts.html">
+                        <div class="item">
+                            <img src="header/shape4.png" alt="Contact Icon">
+                            <span>Contact</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="General.html">
+                        <div class="item">
+                            <img src="header/shape5.png" alt="Draft143 Icon">
+                            <span>Draft143</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="body-contents">
+        <h2>Press the logo for preview</h2>
+        <!-- First Row -->
+        <div class="row row1">
+            <div class="left">
+                <img class="project1" src="portfolio/logo1.png" alt="Image button1">
+            </div>
+            <div class="right">
+                <p>These Notes based on the meme deez... is a final project for mobile application-android development. 
+                    I am the lead front-end developer and my partner for the back.</p>
+                <p>I find android development more challenging than web development</p>
+            </div>
+        </div>
+
+        <div class="hidden-row">
+            <img class="theseNotes" src="portfolio/1.png" alt="1">
+            <img class="theseNotes" src="portfolio/2.png" alt="2">
+            <img class="theseNotes" src="portfolio/3.png" alt="3">
+            <img class="theseNotes" src="portfolio/4.png" alt="4">
+            <img class="theseNotes" src="portfolio/5.png" alt="5">
+            <img class="theseNotes" src="portfolio/6.png" alt="6">
+            <img class="theseNotes" src="portfolio/7.png" alt="7">
+        </div>
+
+        <div class="horizontal-divider"></div>
+
+        <!-- Second Row -->
+        <div class="row row2">
+            <div class="left">
+                <img class="project2" src="portfolio/logo2.png" alt="Image button2">
+            </div>
+            <div class="right">
+                <p>CSM Gaming is a Final Academic Project for Enterprise Programming (Front-Back). Me as the front-end developer and my partner for the back</p>
+                <p>We decided to create our own rendition of steam games</p>
+            </div>
+        </div>
+
+        <div class="hidden-row">
+            <img class="csmGames" src="portfolio/8.png" alt="8">
+            <img class="csmGames" src="portfolio/9.png" alt="9">
+            <img class="csmGames" src="portfolio/10.png" alt="10">
+            <img class="csmGames" src="portfolio/11.png" alt="11">
+            <img class="csmGames" src="portfolio/12.png" alt="12">
+        </div>
+
+        <div class="horizontal-divider"></div>
+
+        <!-- Third Row -->
+        <div class="row row3">
+            <div class="left">
+                <img class="project3" src="portfolio/logo3.png" alt="Image button3">
+            </div>
+            <div class="right">
+                <p>Midnight Coffee is a Software Engineering I and II project which I lead as a Project Manager also as the lead front-end developer</p>
+                <p>The store is located at 1039 Lotus de Cataluña bldg. Sampaloc Manila, Philippines</p>
+            </div>
+        </div>
+
+        <div class="hidden-row">
+            <img class="mnCoffee" src="portfolio/13.png" alt="13">
+            <img class="mnCoffee" src="portfolio/14.png" alt="14">
+            <img class="mnCoffee" src="portfolio/15.png" alt="15">
+            <img class="mnCoffee" src="portfolio/16.png" alt="16">
+            <img class="mnCoffee" src="portfolio/17.png" alt="17">
+            <img class="mnCoffee" src="portfolio/18.png" alt="18">
+            <img class="mnCoffee" src="portfolio/19.png" alt="19">
+            <img class="mnCoffee" src="portfolio/20.png" alt="20">
+            <img class="mnCoffee" src="portfolio/21.png" alt="21">
+            <img class="mnCoffee" src="portfolio/22.png" alt="22">
+            <img class="mnCoffee" src="portfolio/23.png" alt="23">
+            <img class="mnCoffee" src="portfolio/24.png" alt="24">
+            <img class="mnCoffee" src="portfolio/25.png" alt="25">
+            <img class="mnCoffee" src="portfolio/26.png" alt="26">
+            <img class="mnCoffee" src="portfolio/27.png" alt="27">
+            <img class="mnCoffee" src="portfolio/28.png" alt="28">
+        </div>
+    </div>
+</body>
+<script>
+    const buttons = document.querySelectorAll('.project1, .project2, .project3');
+    const hiddenRows = document.querySelectorAll('.hidden-row');
+
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            hiddenRows[index].classList.toggle('show');
+
+            hiddenRows.forEach((row, i) => {
+                if (i !== index && row.classList.contains('show')) {
+                    row.classList.remove('show');
+                }
+            });
+        });
+    });
+</script>
+
+</html>

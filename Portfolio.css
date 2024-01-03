@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+html {
+    min-height: -webkit-fill-available;
+    max-height: fit-content;
+}
+
+body {
+    overflow-y: auto;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, #070B34, #855988);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+/* Set the height of .body-contents to fit its content */
+.body-contents {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+    height: max-content;
+    /* Set the height to fit its content */
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.row{
+    width: 70%;
+}
+
+.left {
+    flex: 1;
+    text-align: center;
+}
+
+.right {
+    flex: 2;
+    text-align: justify;;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+.project1,
+.project2,
+.project3 {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #6B4984, 0 0 20px #141852;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover {
+    transform: scale(1.1);
+}
+
+.hidden-row {
+    display: none;
+    overflow: hidden;
+}
+
+.hidden-row.show {
+    max-height: 500px;
+    max-width: 90%;
+    border-left: solid silver 5px;
+    border-right: solid silver 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    padding: 20px;
+    white-space: nowrap;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.theseNotes{
+    padding: 5px;
+    height: auto;
+    width: 300px;
+}
+
+.csmGames{
+    width: 60%;
+    height: auto;
+    padding: 5px;
+}
+
+.mnCoffee{
+    width: 60%;
+    height: auto;
+    padding: 5px;
+}
+
+.horizontal-divider {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right,
+            #6B4984 0%,
+            #483475 10%,
+            #2B2F77 90%,
+            #141852 100%);
+    background: linear-gradient(to bottom,
+            #6B4984 0%,
+            #483475 10%,
+            #2B2F77 90%,
+            #141852 100%);
+    border-radius: 100px;
+    background-size: 100% 30px;
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 0% 100%;
+    box-shadow: 0 0 20px #6B4984, 0 0 20px #141852;
+}
+
+h2{
+    color: white;
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html {
+    background-image: url(contacts/contacts-bg.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: -webkit-fill-available;
+    max-height: fit-content;
+}
+
+body {
+    margin-top: 80px;
+}
+
+.contact-container {
+    text-align: justify;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.76);
+    margin: 10% 10% 0;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+}
+
+.contact-container img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Align icons horizontally within the container */
+    justify-content: space-between;
+    /* Add space between the icons */
+}
+
+.contact-container a {
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact-container p {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.center-content {
+    text-align: center;
+}
+
+
+.center-content p{
+    margin: 0;
+}

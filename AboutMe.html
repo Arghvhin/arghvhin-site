@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<title>About Me</title>
+
+<head>
+    <link rel="stylesheet" href="AboutMe.css">
+    <link rel="stylesheet" href="Header.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <div class="item">
+                        <img src="header/shape1.png" alt="Home Icon">
+                        <span>Home</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="AboutMe.html">
+                    <div class="item">
+                        <img src="header/shape2.png" alt="About Icon">
+                        <span>About Me</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="Portfolio.html">
+                    <div class="item">
+                        <img src="header/shape3.png" alt="Portfolio Icon">
+                        <span>Portfolio</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="Contacts.html">
+                    <div class="item">
+                        <img src="header/shape4.png" alt="Contact Icon">
+                        <span>Contact</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="General.html">
+                    <div class="item">
+                        <img src="header/shape5.png" alt="Draft143 Icon">
+                        <span>Draft143</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="body-container">
+        <div class="left">
+            <div class="Me">
+                <p class="Name"> Name: R-vhin</p>
+                <p class="Class"> Class: Programmer</p>
+                <img class="Arghvhin" src="aboutMe/Arghvhin-avatar.png" alt="Arghvhin-avatar">
+            </div>
+            <p class="Specialty"> Skills: </p>
+            <div class="skill">
+                <p class="Specialty"> HTML <img class="HTML" src="aboutMe/star4.png" alt="4 stars"> </p>
+                <p class="Specialty"> CSS <img class="CSS" src="aboutMe/star4.png" alt="4 stars"> </p>
+                <p class="Specialty"> JS <img class="JS" src="aboutMe/star2.5.png" alt="2.5 stars"> </p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="right">
+            <p class="Inventory">Inventory (LMB to use)</p>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><button class="btn-img1" onclick="showPopup('popup1')"></button>
+                            <span class="tooltip1">Identity</span>
+                        </td>
+
+                        <td><button class="btn-img2" onclick="showPopup('popup2')"></button>
+                            <span class="tooltip2">Interests</span>
+                        </td>
+                        <td><button class="btn-img3" onclick="showPopup('popup3')"></button>
+                            <span class="tooltip3">Contacts</span>
+                        </td>
+                        <td><button class="btn-img4" onclick="showPopup('popup4')"></button>
+                            <span class="tooltip4">Education</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-img5" onclick="showPopup('popup5')"></button>
+                            <span class="tooltip5">Awards</span>
+                        </td>
+                        <td><button class="btn-img6" onclick="showPopup('popup6')"></button>
+                            <span class="tooltip6">Portfolio</span>
+                        </td>
+                        <td><button class="btn-img7" onclick="showPopup('popup7')"></button>
+                            <span class="tooltip7">Favorite Book</span>
+                        </td>
+                        <td><button class="btn-img8" onclick="showPopup('popup8')"></button>
+                            <span class="tooltip8">Favorite Show</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-img9" onclick="showPopup('popup9')"></button>
+                            <span class="tooltip9">Favorite Food</span>
+                        </td>
+                        <td><button class="btn-imgNone" disabled></button></td>
+                        <td><button class="btn-imgNone" disabled></button></td>
+                        <td><button class="btn-imgNone" disabled></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-imgNone" disabled></button></td>
+                        <td><button class="btn-imgNone" disabled></button></td>
+                        <td><button class="btn-imgNone" disabled></button></td>
+                        <td><button class="btn-imgNone" disabled></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Overlay element -->
+        <div class="overlay" id="overlay">
+            <!-- Hidden Popup Windows -->
+            <div class="popup" id="popup1">
+                <h2>Identity</h2>
+                <div class="popupcontents">
+                    <img class="gradPic" src="aboutMe/Grad_Pic.jpg" alt="Graduation Picture of Me">
+                    <p>This is me. In a formal Filipino theme graduation picture that the pandemic swallowed and had
+                        never pooped out. May SHS batch 2019-2020's graduation rest in peace.
+                    </p>
+                </div>
+                <div class="back-button" onclick="hidePopup('popup1')">Back</div>
+            </div>
+            <div class="popup" id="popup2">
+                <h2>Interests</h2>
+                <div class="popupcontents">
+                    <p>I like to play variety games. I dont usually stick to one game,
+                        I need to explore them since I also have an interest with game development.
+                        Here are some examples that I made during our Game Development Specialization course
+                    </p>
+                </div>
+                <div class="viewVertical">
+                    <img class="gameDev" src="aboutMe/race1.png" alt="Race1">
+                    <img class="gameDev" src="aboutMe/race2.png" alt="Race2">
+                    <img class="gameDev" src="aboutMe/race3.png" alt="Race3">
+                    <img class="gameDev" src="aboutMe/Cleo1.png" alt="Cleo1">
+                    <img class="gameDev" src="aboutMe/Cleo2.png" alt="Cleo2">
+                    <img class="gameDev" src="aboutMe/Cleo3.png" alt="Cleo3">
+                    <img class="gameDev" src="aboutMe/Cleo4.png" alt="Cleo4">
+                    <img class="gameDev" src="aboutMe/Cleo5.png" alt="Cleo5">
+                    <img class="gameDev" src="aboutMe/Cleo6.png" alt="Cleo6">
+                </div>
+                <div class="back-button" onclick="hidePopup('popup2')">Back</div>
+            </div>
+
+            <div class="popup" id="popup3">
+                    <!-- SHOULD BE EMPTY -->
+                <div class="back-button" onclick="hidePopup('popup3')">Back</div>
+            </div>
+
+
+            <div class="popup" id="popup4">
+                <h2>Education</h2>
+                <div class="viewVertical">
+                    <p>The Pontifical and Royal Catholic University of the Philippines</p>
+                    <p>University of Santo Tomas </p>
+                    <img class="ustImg" src="aboutMe/UST1.jpg" alt="UST Bldg.">
+                    <img class="ustImg" src="aboutMe/UST2.jpg" alt="Frassatti Bldg.">
+                    <p>The Frassatti Building houses my College Department of Computer Science. 
+                        I am a 4th year student under the Game Development Specialization track. </p>
+                </div>
+                <div class="back-button" onclick="hidePopup('popup4')">Back</div>
+            </div>
+            <div class="popup" id="popup5">
+                <h2>Awards</h2>
+                <div class="viewVertical">
+                    <p>For awards about Development, I havent really have one. But for academics, I've been a consistent Dean's Lister throughout my College life.
+                        Block Representative during our Freshmen year.</p>
+                    <p>At the same time, an active org. member of Computer Science Society for the past 3 years</p>
+                    <ul>
+                        <li>2022-2023 Community Development Committee member</li>
+                        <li>2021-2022 Executive Associate to the 2nd year level Representative.  
+                            <ol>
+                                <p>Committees:</p>
+                                <li>Documentation</li>
+                                <li>Sports and Talents</li>
+                                <li>Technology Development</li>
+                            </ol>
+                        </li>
+                        <li>2020-2021  Community Development Committee member</li>
+                    </ul>
+                </div>
+                <div class="back-button" onclick="hidePopup('popup5')">Back</div>
+            </div>
+            <div class="popup" id="popup6">
+                <!-- SHOULD BE EMPTY -->
+                <div class="back-button" onclick="hidePopup('popup6')">Back</div>
+            </div>
+            <div class="popup" id="popup7">
+                <h2>Favorite Book</h2>
+                <p>If you have questions, pm me. I'll talk nonstop about its lore</p>
+                <div class="popupcontents">
+                    <img class="lotr" src="aboutMe/lotr1.png" alt="Lord of the Rings bookset">
+                    <img class="lotr" src="aboutMe/lotr2.png" alt="Silmarillion book">
+                    <img class="lotr" src="aboutMe/lotr3.png" alt="Fall of Gondolin book">
+                </div>
+                <div class="back-button" onclick="hidePopup('popup7')">Back</div>
+            </div>
+            <div class="popup" id="popup8">
+                <h2>Favorite Film</h2>
+                <p>Go to my favorite book, you'll know the answer</p>
+                <div class="back-button" onclick="hidePopup('popup8')">Back</div>
+            </div>
+            <div class="popup" id="popup9">
+                <h2>Favorite Food</h2>
+                <div class="viewVertical">
+                    <p>The food being served, not the bee himself</p>
+                    <img class="jabee" src="aboutMe/jabee.png" alt="Jollibee">
+                </div>
+                <div class="back-button" onclick="hidePopup('popup9')">Back</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function showPopup(popupId) {
+        // Show the overlay
+        document.getElementById('overlay').style.display = 'flex';
+        // Show the specified popup
+        document.getElementById(popupId).style.display = 'block';
+
+        if (popupId === 'popup3') {
+            window.location.href = "Contacts.html";
+        }
+        if (popupId === 'popup6') {
+            window.location.href = "Portfolio.html";
+        }
+    }
+
+
+    function hidePopup(popupId) {
+        // Hide the overlay
+        document.getElementById('overlay').style.display = 'none';
+        // Hide the specified popup
+        document.getElementById(popupId).style.display = 'none';
+    }
+
+    // Function to navigate to Contacts.html
+    function goToContacts() {
+        window.location.href = "Contacts.html";
+    }
+
+    // Function to navigate to Portfolio.html
+    function goToPortfolio() {
+        window.location.href = "Portfolio.html";
+    }
+
+</script>
+
+</html>
